@@ -6,9 +6,14 @@
  
 </div>
 <h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <a routerLink='/student'>standard</a>
-    <a routerLink='/standard'>student List</a>
+
+<StudentListComponent [userId]="std.userId" 
+[title]="std.title" (sendRecord) = "getRecord()" *ngFor="let std of studentRecord">lidt</StudentListComponent>
+
+<!-- <ul *ngFor="let std of studentRecord">
+  <li> <button (sendRecord) = "getRecord()">{{std.userId}}</button>
   </li>
-</ul>
+  <li> {{std.title}}
+  </li>
+</ul> -->
+<router-outlet> </router-outlet>

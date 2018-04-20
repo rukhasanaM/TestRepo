@@ -1,17 +1,4 @@
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  title = 'Ryan School';
-
-  public getRecord(data: any): void {
-   console.log('get Data');
-  }
-  public studentRecord : any  =[
+[
     {
       "userId": 1,
       "id": 1,
@@ -24,5 +11,4 @@ export class AppComponent {
       "title": "qui est esse",
       "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
     }
-  ]
-}
+]

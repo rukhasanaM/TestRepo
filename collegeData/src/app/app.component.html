@@ -1,0 +1,15 @@
+<script>
+  System.import('app')
+    .catch(console.error.bind(console));
+</script>
+
+<h2 class="text-center"> College Name </h2>
+
+<div class="card w-25 text-center">
+ 
+<div class="card-body" *ngFor = "let student of classRoom | async">
+  <a  [routerLink]="['/classRooms', student.classid]" >{{student.classname}}</a>
+</div>
+</div>
+<router-outlet></router-outlet>
+
